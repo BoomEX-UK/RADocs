@@ -30,13 +30,14 @@ The Behavior field allows you to specify what the emulator should do when a valu
 | Blank           | The emulator will behave as normal when the value changes  |
 | Frozen          | The emulator keep the memory address at it's current value |
 | [Pause](#Pause) | Upon change, the emulator will be paused                   |
-##### Pause
+#### Pause
 To help understand when a memory address changes, you can set the bookmark behavior to `Pause`. When one or more of these addresses changes the following will happen:
 - RA Integration will display an alert box listing `Pause` the bookmarks that have changed
 - The Memory Bookmarks window will highlight in red all of the `Pause` bookmarks that have changed
 - The emulator will be put into a Pause state. See: [Emulator Hotkeys](../resources/emulator-hotkeys.md)
 
 ![Memory Bookmarks Paused](img/memory-bookmarks-pause.png)
+
 After pressing OK on the alert box, the red Memory Bookmarks will remain highlighted until the emulator is no longer Paused.
 
 ### Useful Tips
@@ -44,4 +45,5 @@ After pressing OK on the alert box, the red Memory Bookmarks will remain highlig
 - You can bookmark the same address multiple times, this allows you to set different `Size` or `Format` fields.
 - The `Changes` field is useful for discovering how often an address changes, you can reset all of the counters by pressing `Clear All Changes`
 - When using the `Float` format, the value will be displayed as a decimal number
-- If you want to change the behavior of multiple addresses at once, you can highlight them, hold `Ctrl` and click the Behavior field of the last one selected
+- To move multiple addresses next to each other in the list, hold `Ctrl` and click each address, then press the `Move Up` or `Move Down` button once
+- If you want to change the [Behavior field](#Behavior) of multiple addresses at once, you can highlight them, hold `Ctrl` and click the Behavior field of the last one selected
